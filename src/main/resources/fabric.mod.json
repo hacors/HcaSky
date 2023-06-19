@@ -1,34 +1,26 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "hacorsiland",
 	"version": "${version}",
-	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Hacors Island",
+	"description": "Hacors Island",
 	"authors": [
-		"Me!"
+		"Hacors"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/FabricMC"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
+	"icon": "assets/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
-		],
-		"client": [
-			"com.example.ExampleModClient"
-
+			"com.github.hacors.HcaSkyMod"
 		]
 	},
 	"mixins": [
-		"modid.mixins.json",
-		{
-			"config": "modid.client.mixins.json",
-			"environment": "client"
-		}
+		"hcaSky.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.14.21",
